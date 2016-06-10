@@ -1,0 +1,13 @@
+<h1> Welcome to My-Quora </h1>
+
+<h4>We hope you find all the answers to your questions, or help other people finding theirs.</h4>
+
+<ul>
+  {{#each model as |question|}}
+  <p><strong>Question:</strong> {{question.userQuestion}}</p>
+  <p><strong>User:</strong> {{question.questioner}}</p>
+  <p><strong>Date:</strong> {{question.date}}</p>
+  {{/each}}
+</ul>
+
+  {{question-tile componentQuestion=templateQuestion destroyQuestionCp="destroyQuestionRouter"}}

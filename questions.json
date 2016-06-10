@@ -1,0 +1,22 @@
+{ "questions": [{
+    "userQuestion": "How does one become a great coder?",
+    "questioner":"Fernanda Lowe",
+    "date":"06/10/16"
+  },{
+    "userQuestion": "There's so much to learn to become a junior java developer. I'm working hard but I'm never satisfied with the progress I make. What should I do?",
+    "questioner":"Fernanda Lowe",
+    "date":"06/10/16"
+  },{
+    "userQuestion": "Can you please give an concrete example of a daily programming task (and its requested time to finish) as a junior software developer?",
+    "questioner":"Fernanda Lowe",
+    "date":"06/10/16"
+  },{
+    "userQuestion": "How long does it take to become proficient in Java if you are new to programming?",
+    "questioner":"Fernanda Lowe",
+    "date":"06/10/16"
+  },{
+    "userQuestion": "What are some of the best blogs about Java?",
+    "questioner":"Fernanda Lowe",
+    "date":"06/10/16"
+  }]
+}

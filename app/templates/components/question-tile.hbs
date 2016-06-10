@@ -1,0 +1,9 @@
+<!-- <li>{{question.userQuestion}}
+  {{question.questioner}}
+  {{question.date}} -->
+  {{#if areDetailsShowing }}
+    <p{{action 'hideDetails'}}>{{question.questioner}}{{question.date}}</p>
+  {{else}}
+    <button {{action 'showDetails'}}>show details</button>
+ {{/if}}
+<!-- </li> -->
