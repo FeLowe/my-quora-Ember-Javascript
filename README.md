@@ -6,7 +6,8 @@
 
 ## Project Description
 
-This project is a "Quora" like application that let user(s) create a question and submit it, and other users can respond with answers.
+This project is a "Quora" like application built based on a week - 40+ hours - learning stand point using JS Ember.
+It applies one to many relationship, where a user creates a question and submits it, and other users can respond with answers.
 
 ## Ember Description
 
