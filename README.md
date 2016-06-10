@@ -1,12 +1,12 @@
-# Week 2: Javascript - Ember Independent Project
+# Week 3: Javascript - Ember Independent Project
 
-### My-Quora: Question and Answer Message Board, 06/10/2016.
+### Project: Question and Answer Message Board, 06/10/2016.
 
 #### By Fernanda Lowe
 
 ## Project Description
 
-This project is a "Quora" like application that let user(s) create a question and submit it, and other user(s) can respond with answers.
+This project is a "Quora" like application that let user(s) create a question and submit it, and other users can respond with answers.
 
 ## Ember Description
 
@@ -52,6 +52,24 @@ Make use of the many generators for code, try `ember help generate` for more det
 ### Deploying
 
 Specify what it takes to deploy your app.
+
+### Known Bugs
+
+None;
+
+### Support and contact details
+
+If while setting up your own project based on this repository you run into any issues or have questions, ideas, concerns, or would like to make a contribution to the code, please contact me at fe_lowe@hotmail.com
+
+## Technologies Used
+
+Javascript, jQuery, Bootstrap
+
+### License
+
+Application can be used under MIT and ISC licenses.
+
+Copyright (c) 2016 Fernanda Lowe at Epicodus.
 
 ## Further Reading / Useful Links
 
