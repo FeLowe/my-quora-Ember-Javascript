@@ -1,4 +1,5 @@
-<li>
+<li>{{#link-to 'question' question.id}}{{/link-to}}
+
   <p><strong>Question:</strong> {{question.userQuestion}}</p>
   {{#if areDetailsShowing }}
     <p{{action 'hideDetails'}}><strong>User:</strong> {{question.questioner}}, <strong>date:</strong> {{question.date}}</p>

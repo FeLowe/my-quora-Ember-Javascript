@@ -2,8 +2,12 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('question');
+    return Ember.RSVP.hash({
+      questions: this.store.findAll('question'),
+      answers: this.store.findAll('answer')
+    });
   },
+
   actions: {
     saveQuestionRoute(questionInput) {
       var newQuestion = this.store.createRecord('question', questionInput);
@@ -11,8 +15,8 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
     destroyQuestionRouter(question) {
-      rental.destroyRecord();
+      question.destroyRecord();
       this.transitionTo('index');
     }
-  }
+    }
 });
