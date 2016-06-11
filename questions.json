@@ -18,5 +18,14 @@
     "userQuestion": "What are some of the best blogs about Java?",
     "questioner":"Fernanda Lowe",
     "date":"06/10/16"
+  }],
+    "answers": [{
+    "userAnswer": "Programming is like any other human activity - there are going to be child prodigies on the extreme right of the bell curve, there are going to be people of average ability, and there are going to be people on the far left. I believe the only people who are unable to reach a level of programming competency are those with mental handicaps, which prevent them from competency in most kinds of human intellectual activity. So, assuming you have average cognitive abilities, can you become a great coder? An obvious necessary requirement to becoming great at something is to first acquire basic competency.",
+    "respondent": "Vladimir Sedach, Have Emacs, Will Hack",
+    "date": "06/10/16"
+  }, {
+    "userAnswer":"You should be challenging yourself and making some mistakes. I would take it that you are not satisfied as a good sign, you should always be learning, you are never done.  I have been programming nearly every day for 30 years and I am a Java Champion, but I don't know a fraction of all you could possibly learn about every Java library. You need a good working knowledge and be able to research/google the rest.",
+    "respondent": "Peter Lawrey",
+    "date": "06/10/16"
   }]
 }

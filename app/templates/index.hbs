@@ -2,10 +2,13 @@
 
 <h4>We hope you find all the answers to your questions, or help other people finding theirs.</h4>
 
-<ul>
-  {{#each model as |question|}}
-    {{question-tile question=question destroyQuestionCp="destroyQuestionRouter"}}
-  {{/each}}
-</ul>
+<h2>Trend Questions</h2>
 
 {{new-question saveQuestionCp="saveQuestionRoute"}}
+<ul>
+  {{#each model.questions as |question|}}
+    <li>{{#link-to 'question' question.id}}{{question.userQuestion}}{{/link-to}}
+        <p><i>By:</i> {{question.questioner}}, <i>date:</i> {{question.date}}</p>
+    </li>
+  {{/each}}
+</ul>

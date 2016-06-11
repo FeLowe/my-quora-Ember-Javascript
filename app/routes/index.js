@@ -7,7 +7,6 @@ export default Ember.Route.extend({
       answers: this.store.findAll('answer')
     });
   },
-
   actions: {
     saveQuestionRoute(questionInput) {
       var newQuestion = this.store.createRecord('question', questionInput);
@@ -17,6 +16,6 @@ export default Ember.Route.extend({
     destroyQuestionRouter(question) {
       question.destroyRecord();
       this.transitionTo('index');
-    }
-    }
+    },
+  }
 });

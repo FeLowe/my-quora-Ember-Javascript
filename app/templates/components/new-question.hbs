@@ -1,5 +1,5 @@
 {{#if addNewQuestion}}
-  <h1>New City</h1>
+  <h1>Ask a Question</h1>
     <div>
       <form>
         <div class="form-group">
@@ -11,11 +11,12 @@
           <label for="user">User</label>
           {{input value=user id="user"}}
         </div>
+
         <div class="form-group">
           <label for="date">Date</label>
           {{input value=date id="date" type="date"}}
         </div>
-
+        
         <button {{action 'saveQuestionCp'}}>Save</button>
       </form>
     </div>
