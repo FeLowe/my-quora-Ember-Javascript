@@ -4,10 +4,8 @@
 
 <ul>
   {{#each model as |question|}}
-  <p><strong>Question:</strong> {{question.userQuestion}}</p>
-  <p><strong>User:</strong> {{question.questioner}}</p>
-  <p><strong>Date:</strong> {{question.date}}</p>
+    {{question-tile question=question destroyQuestionCp="destroyQuestionRouter"}}
   {{/each}}
 </ul>
 
-  {{question-tile componentQuestion=templateQuestion destroyQuestionCp="destroyQuestionRouter"}}
+{{new-question saveQuestionCp="saveQuestionRoute"}}

@@ -1,9 +1,8 @@
-<!-- <li>{{question.userQuestion}}
-  {{question.questioner}}
-  {{question.date}} -->
+<li>
+  <p><strong>Question:</strong> {{question.userQuestion}}</p>
   {{#if areDetailsShowing }}
-    <p{{action 'hideDetails'}}>{{question.questioner}}{{question.date}}</p>
+    <p{{action 'hideDetails'}}><strong>User:</strong> {{question.questioner}}, <strong>date:</strong> {{question.date}}</p>
   {{else}}
-    <button {{action 'showDetails'}}>show details</button>
+    <button {{action 'showDetails'}}>question details</button>
  {{/if}}
-<!-- </li> -->
+</li>
