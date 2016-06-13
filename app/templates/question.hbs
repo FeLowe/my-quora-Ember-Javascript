@@ -4,13 +4,12 @@
 {{new-answer question=model saveAnswerInsideQuestionCp="saveAnswerInsideQuestionRoute" destroyAnswerComp="destroyAnswerRoute"}}
 
 
-{{answer-detail question=model delete="delete"}}
 
-{{#each model.answers as |answer|}}
+{{#each model.answers as |currentAnswer|}}
 <hr>
-<p><strong>Answer: </strong>{{answer.userAnswer}}</p>
-<p><i>Answered by: </i>{{answer.respondent}} ~ <i>posted on:</i> {{answer.date}}</p>
-{{answer-update question=model update="update"}}
+
+{{answer-update answer=currentAnswer update="update"}}
+{{answer-detail answer=currentAnswer destroyAnswerSendToParent="destroyAnswerInsideQuestionRoute"}}
 {{/each}}
 
 <br>

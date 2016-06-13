@@ -26,12 +26,14 @@ actions: {
     this.transitionTo('question', answerInput.userQuestion);
   },
 
-  destroyAnswerInsideQuestionRoute(userQuestion) {
-    var answer_deletions = userQuestion.get('answer').map(function(answer) {
+  destroyAnswerInsideQuestionRoute(answerToDelete) {
+    // so this is where the delete problem is right now, we were getting undefined from userQuestion.get('answers')
+    //because we are actually passing up the answer we want to delete, not the question. 
+    var answer_deletions = answerToDelete.get('answers').map(function(answer) {
       return answer.destroyRecord();
     });
     Ember.RSVP.all(answer_deletions).then(function() {
-      return userQuestion.destroyRecord();
+      return answerToDelete.destroyRecord();
     });
     this.transitionTo('question');
     }
