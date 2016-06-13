@@ -7,7 +7,7 @@ export default Ember.Component.extend({
       this.set('addNewQuestion', true);
     },
 
-    saveQuestionCp() {
+    saveQuestionInputCp() {
       var questionInput = {
         userQuestion: this.get('question'),
         questioner: this.get('user'),
@@ -15,7 +15,7 @@ export default Ember.Component.extend({
       };
       this.set('addNewQuestion', false);
 
-      this.sendAction('saveQuestionCp', questionInput);
+      this.sendAction('saveQuestionInputCp', questionInput);
     }
   }
 });

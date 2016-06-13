@@ -1,0 +1,21 @@
+{{#if AnswerUpdateForm}}
+<div>
+  <form>
+    <div class="form-group">
+      <label for="answer">Answer</label>
+      {{textarea value=answer id="answer"}}
+    </div>
+    <div class="form-group">
+      <label for="user">By</label>
+      {{input value=user id="user"}}
+    </div>
+    <div class="form-group">
+      <label for="date">posted on</label>
+      {{input value=date id="date" type='date'}}
+    </div>
+    <button {{action 'update'}}>post answer</button>
+  </form>
+</div>
+{{else}}
+<button {{action 'AnswerUpdateForm'}}>update answer</button>
+{{/if}}

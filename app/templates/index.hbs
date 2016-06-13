@@ -1,14 +1,14 @@
 <h1> Welcome to My-Quora </h1>
 
-<h4>We hope you find all the answers to your questions, or help other people finding theirs.</h4>
+<h4>We hope you find all the <i>answers to your questions,</i> or help other <i>people finding theirs.</i></h4>
 
-<h2>Trend Questions</h2>
+<h2>Trendy Questions</h2>
 
-{{new-question saveQuestionCp="saveQuestionRoute"}}
 <ul>
   {{#each model.questions as |question|}}
     <li>{{#link-to 'question' question.id}}{{question.userQuestion}}{{/link-to}}
-        <p><i>By:</i> {{question.questioner}}, <i>date:</i> {{question.date}}</p>
     </li>
   {{/each}}
 </ul>
+
+{{new-question question=model saveQuestionInput="saveQuestionIndexRoute"}}
