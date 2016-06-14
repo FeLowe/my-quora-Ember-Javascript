@@ -13,7 +13,7 @@ export default Ember.Component.extend({
         date: this.get('date'),
       };
       this.set('AnswerUpdateForm', false);
-      this.sendAction('update', answer, answerUpdateInput);
+      this.sendAction('updateComp', answer, answerUpdateInput);
     }
   }
 });

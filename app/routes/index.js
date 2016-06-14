@@ -12,10 +12,6 @@ export default Ember.Route.extend({
       var newQuestion = this.store.createRecord('question', questionInput);
       newQuestion.save();
       this.transitionTo('index');
-    },
-    delete(answer) {
-      answer.destroyRecord();
-      this.transitionTo('index');
-    },
+    }
   }
 });

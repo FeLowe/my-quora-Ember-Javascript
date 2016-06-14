@@ -1,15 +1,18 @@
 <h4><i>{{model.userQuestion}}</i></h4>
 <p><i>Questioner:</i> {{model.questioner}} ~ <i>posted on:</i> {{model.date}}</p>
 
-{{new-answer question=model saveAnswerInsideQuestionCp="saveAnswerInsideQuestionRoute" destroyAnswerComp="destroyAnswerRoute"}}
+{{new-answer question=model saveAnswerInsideQuestionCp="saveAnswerInsideQuestionRoute"}}
 
 
 
 {{#each model.answers as |currentAnswer|}}
 <hr>
 
-{{answer-update answer=currentAnswer update="update"}}
-{{answer-detail answer=currentAnswer destroyAnswerSendToParent="destroyAnswerInsideQuestionRoute"}}
+{{answer-tile answer=currentAnswer deleteAnswerCp="deleteAnswerRoute"}}
+
+{{answer-update answer=currentAnswer updateComp="updateRoute"}}
+
+{{answer-detail answer=currentAnswer destroyAnswerCp="destroyAnswerRoute"}}
 {{/each}}
 
 <br>
