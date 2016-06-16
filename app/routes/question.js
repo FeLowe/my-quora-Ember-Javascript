@@ -15,13 +15,13 @@ export default Ember.Route.extend({
     });
     this.transitionTo('question', answerInput.userQuestion);
   },
-    updateRoute(answer, answerUpdateInput) {
+    updateRoute(currentVersionOfAnswer, answerUpdateInput) {
       Object.keys(answerUpdateInput).forEach(function(key) {
         if(answerUpdateInput[key]!==undefined) {
-          answer.set(key, answerUpdateInput[key]);
+          currentVersionOfAnswer.set(key, answerUpdateInput[key]);
         }
       });
-      answer.save();
+      currentVersionOfAnswer.save();
       this.transitionTo('index');
     },
 
@@ -40,5 +40,5 @@ export default Ember.Route.extend({
       });
       this.transitionTo('question');
     }
-  }  
+  }
 });

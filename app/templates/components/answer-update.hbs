@@ -3,15 +3,15 @@
   <form>
     <div class="form-group">
       <label for="answer">Answer</label>
-      {{textarea value=answer id="answer"}}
+      {{textarea value=userAnswerTest id='answerUpdate' placeholder=answer.userAnswer}}
     </div>
     <div class="form-group">
       <label for="user">By</label>
-      {{input value=user id="user"}}
+      {{input value=respondentTest id='userUpdate' placeholder=answer.respondent}}
     </div>
     <div class="form-group">
       <label for="date">posted on</label>
-      {{input value=date id="date" type='date'}}
+      {{input value=dateTest id='dateUpdate' type='date' placeholder=answer.date}}
     </div>
     <button {{action 'update' answer}}>update answer</button>
   </form>
