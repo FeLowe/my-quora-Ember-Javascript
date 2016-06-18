@@ -22,15 +22,12 @@ export default Ember.Route.extend({
         }
       });
       currentVersionOfAnswer.save();
-      this.transitionTo('index');
+      this.transitionTo('question');
     },
-
     destroyAnswerRoute(answer) {
       answer.destroyRecord();
       this.transitionTo('index');
     },
-    // so this is where the delete problem is right now, we were getting undefined from userQuestion.get('answers')
-    //because we are actually passing up the answer we want to delete, not the question.
     destroyQuestionLinkedToAnswer(question) {
       var answer_deletions = question.get('answers').map(function(answer) {
         return answer.destroyRecord();

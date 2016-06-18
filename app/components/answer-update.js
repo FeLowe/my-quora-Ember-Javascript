@@ -12,7 +12,6 @@ export default Ember.Component.extend({
         respondent: this.get('respondentTest'),
         date: this.get('dateTest'),
       };
-
       this.set('AnswerUpdateForm', false);
       this.sendAction('updateComp', currentVersionOfAnswer, answerUpdateInput);
     }

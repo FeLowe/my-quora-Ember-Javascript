@@ -17,9 +17,9 @@
           {{input value=date id="date" type='date'}}
         </div>
 
-        <button {{action 'saveAnswerInsideQuestionCp'}}>post answer</button>
+        <button class="btn btn-success" {{action 'saveAnswerInsideQuestionCp'}}>post answer</button>
       </form>
     </div>
 {{else}}
-  <button{{action 'showAnswerForm'}}>answer this question</button>
+  <button class="btn btn-success"{{action 'showAnswerForm'}}>answer this question</button>
 {{/if}}

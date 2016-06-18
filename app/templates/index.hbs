@@ -6,10 +6,8 @@
 <hr>
 <h2>Trendy Questions</h2>
 
-<ul>
+
   {{#each model.questions as |question|}}
-    <li>{{#link-to 'question' question.id}}{{question.userQuestion}}{{/link-to}}
+  {{#link-to 'question' question.id}}{{question.userQuestion}}{{/link-to}}
       {{question-update question=question updateQuestionCp="updateQuestionIndexRoute"}}
-    </li>
   {{/each}}
-</ul>
