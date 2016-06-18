@@ -9,7 +9,7 @@ export default Ember.Component.extend({
 
     saveQuestionInputCp() {
       var questionInput = {
-        userQuestion: this.get('question'),
+        userQuestion: this.get('questionField'),
         questioner: this.get('user'),
         date: this.get('date')
       };
