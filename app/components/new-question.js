@@ -7,12 +7,13 @@ export default Ember.Component.extend({
       this.set('addNewQuestion', true);
     },
 
-    saveQuestionInputCp() {
+    saveQuestion() {
       var questionInput = {
         userQuestion: this.get('questionField'),
         questioner: this.get('user'),
         date: this.get('date')
       };
+      debugger;
       this.set('addNewQuestion', false);
 
       this.sendAction('saveQuestionInputCp', questionInput);

@@ -13,9 +13,9 @@
       <label for="date">posted on</label>
       {{input value=dateTest id='dateUpdate' type='date' placeholder=answer.date}}
     </div>
-    <button {{action 'update' answer}}>update answer</button>
+    <button {{action 'update' answer}}>save</button>
   </form>
 </div>
 {{else}}
-<button {{action 'AnswerUpdateForm'}}>update answer</button>
+<button {{action 'AnswerUpdateForm'}}>update</button>
 {{/if}}

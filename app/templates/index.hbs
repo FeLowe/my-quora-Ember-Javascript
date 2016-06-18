@@ -2,13 +2,14 @@
 
 <h4>We hope you find all the <i>answers to your questions,</i> or help other <i>people finding theirs.</i></h4>
 
+{{new-question question=model saveQuestionInputCp="saveQuestionIndexRoute"}}
+<hr>
 <h2>Trendy Questions</h2>
 
 <ul>
   {{#each model.questions as |question|}}
     <li>{{#link-to 'question' question.id}}{{question.userQuestion}}{{/link-to}}
+      {{question-update question=question updateQuestionCp="updateQuestionIndexRoute"}}
     </li>
   {{/each}}
 </ul>
-
-{{new-question question=model saveQuestionInput="saveQuestionIndexRoute"}}

@@ -1,6 +1,12 @@
+html{
+    height: 2000px;
+    margin: auto;
+    width: 960px;
+    /*overflow: hidden;*/
+}
+
 .container{
   margin-top: 100px;
-  /*overflow: scroll;*/
 }
 #logo{
   height: 70px;

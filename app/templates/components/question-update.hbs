@@ -1,0 +1,24 @@
+{{#if updateQuestionForm}}
+  <div>
+    <form>
+    <div class="form-group">
+      <label for="questionUpdate">question</label>
+      {{textarea value=questionUpdate id="questionUpdate" placeholder=question.userQuestion}}
+    </div>
+
+    <div class="form-group">
+      <label for="questionerUpdate">user</label>
+      {{input value=questionerUpdate id="questionerUpdate" placeholder=question.questioner}}
+    </div>
+
+    <div class="form-group">
+      <label for="dateQuestionUpdate">Date</label>
+      {{input value=dateQuestionUpdate id="dateQuestionUpdate" type='date' placeholder=question.date}}
+    </div>
+
+  <button {{action 'updateQuestion' question}}>save</button>
+  </form>
+</div>
+{{else}}
+  <button {{action 'updateQuestionForm'}}>update</button>
+{{/if}}
